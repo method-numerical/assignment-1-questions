@@ -1,11 +1,14 @@
 """
-creating a fibonacci module.
+to calculate first 100 fiboacci numbers & time needed.
+
 """
-def fibonacci(n):
-    f=[0,1]
-    for j in range(2,n):
-        f.append(f[j-1]+f[j-2])
-        j=j+1
-    for k in range(0,n):
-        print('f(',k+1,')=',f[k])
-        k=k+1
+import fibonacci
+import timeit
+a=fibonacci.fibonacci(100)
+
+code="""
+import fibonacci
+a=fibonacci.fibonacci(100)
+"""
+t=timeit.timeit(code,number=1)
+print('time needed = ',t,'seconds.')
