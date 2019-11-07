@@ -1,7 +1,7 @@
 """
-code to make a list of unicode points by (list method).
+code to make a list of unicode points by (list comprehension method).
 
 """
 s='mumbai'
-l=[ord(s[0]),ord(s[1]),ord(s[2]),ord(s[3]),ord(s[4]),ord(s[5])]
+l=[ord(s[j])for j in range(len(s))]
 print(l)
