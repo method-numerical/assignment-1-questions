@@ -1,11 +1,9 @@
 """
-addition of list, string, floating points.
+generalising adder function to add any arbitrary numbers.
 
 """
-def adder(x,y):
-    z=x+y
-    return z
-
-print(adder('s','t'))
-print(adder([4,0],[9,8]))
-print(adder(34.07,78.09))
+def adder(num):
+    sum=0
+    for j in num:
+        sum=sum+j
+    return sum
