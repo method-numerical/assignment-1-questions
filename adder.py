@@ -2,9 +2,9 @@
 generalisation to add any number of keywords.
 
 """
-def adder(**num):
+def adder(**keywords):
     sum=0
-    for key, value in num.items():
+    for key, value in keywords.items():
         sum=sum+value
     return sum
 
