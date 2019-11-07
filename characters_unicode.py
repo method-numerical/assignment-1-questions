@@ -1,9 +1,7 @@
 """
-code to print sum of  unicodes of characters of a string.
+code to make a list of unicode points by (list method).
 
 """
 s='mumbai'
-for j in range(1,len(s)):
-    f=ord(s[j])+ord(s[j-1])
-    j=j+1
-print('sum of unicode is :=',f)
+l=[ord(s[0]),ord(s[1]),ord(s[2]),ord(s[3]),ord(s[4]),ord(s[5])]
+print(l)
