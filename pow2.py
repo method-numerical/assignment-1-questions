@@ -1,5 +1,5 @@
 """
-improving the previous code.
+improving the previous code....
 moving 2**X expression out of the loop....
 """
 L=[]
