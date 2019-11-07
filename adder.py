@@ -1,14 +1,11 @@
 """
-adder function taking only good, bad, ugly kewwords.
+addition of list, string, floating points.
 
 """
-def adder(good,bad,ugly):
-    z=good+bad+ugly
+def adder(x,y):
+    z=x+y
     return z
-good=1; bad=2; ugly=3;    #default values....
 
-a=adder(good=5,ugly=1)
-
-#after executing above code error came as TypeError: adder() missing 1 required positional argument: 'bad'.
-
-#It implies that this function must take all key words good,bad,ugly.
+print(adder('s','t'))
+print(adder([4,0],[9,8]))
+print(adder(34.07,78.09))
