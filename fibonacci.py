@@ -1,14 +1,7 @@
 """
-to calculate first 100 fiboacci numbers & time needed.
+single line code to generate first 10 fibonacci numbers.
 
 """
-import fibonacci
-import timeit
-a=fibonacci.fibonacci(100)
-
-code="""
-import fibonacci
-a=fibonacci.fibonacci(100)
-"""
-t=timeit.timeit(code,number=1)
-print('time needed = ',t,'seconds.')
+from functools import reduce
+a=lambda n: reduce(lambda x,_: x+[x[-1]+x[-2]],range(n-2),[0,1])
+print(a(10))
