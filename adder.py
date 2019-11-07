@@ -1,9 +1,11 @@
 """
-addition of any orbitrary numbers.generalisation to add any number of keywords.
+generalisation to add any number of keywords.
 
 """
-def adder(*num):
+def adder(**num):
     sum=0
-    for j in num:
-        sum=sum+j
+    for key, value in num.items():
+        sum=sum+value
     return sum
+
+print(adder(a=1,b=2,c=5,d=8))
